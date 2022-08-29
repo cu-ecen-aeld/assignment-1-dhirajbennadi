@@ -3,7 +3,7 @@
 # Author: Dhiraj Bennadi
 
 
-
+# $0 represents the first argument to the script, and subsequent numbers represent the next arguments
 echo "Executing Shell script: $0"
 
 if [ $# -lt 2 ]
@@ -36,6 +36,7 @@ file="${writefile%.*}"
 cd "${writefile%/*}"
 #pwd
 
+# Create a file with the file_name provided as argument
 touch $file_name
 
 
